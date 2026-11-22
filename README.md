@@ -4,6 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
+## App Screenshots
+
+| Screen 1 | Screen 2 |
+| :---: | :---: |
+| ![Screen 1](Image\Screenshot_1795308667.png) | ![Screen 2](Image\Screenshot_1795312056.png) |
+
+This project is a starting point for a Flutter application.
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

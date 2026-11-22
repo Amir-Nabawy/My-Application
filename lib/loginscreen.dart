@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_3/custom_widgets.dart';
 
 class Loginscreen extends StatelessWidget {
   const Loginscreen({super.key});
@@ -27,7 +27,7 @@ class Loginscreen extends StatelessWidget {
                   style: TextStyle(fontSize: 16, color: Color(0xff7C7C7C)),
                 ),
                 SizedBox(height: 40),
-            
+
                 TextFormField(
                   cursorColor: Color.fromARGB(255, 241, 202, 202),
                   decoration: InputDecoration(
@@ -56,9 +56,10 @@ class Loginscreen extends StatelessWidget {
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: Color(0xffE2E2E2)),
                     ),
-                    suffixIcon: Icon(Icons.visibility_off
-                    ,
-                    color: Color(0xff7C7C7C),),
+                    suffixIcon: Icon(
+                      Icons.visibility_off,
+                      color: Color(0xff7C7C7C),
+                    ),
                     labelText: "Password",
                     labelStyle: TextStyle(
                       fontWeight: FontWeight(600),
@@ -76,24 +77,13 @@ class Loginscreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-            
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 24.5),
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Color(0xff53B175),
-                    borderRadius: BorderRadius.circular(19),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Log In",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight(600),
-                        color: Color(0xffFFF9FF),
-                      ),
-                    ),
-                  ),
+
+                AppBotton(
+                  text: "Log In",
+                  color: Color(0xff53B175),
+                  textcollor: Color(0xffFFF9FF),
+                  fontWeight: FontWeight(600),
+                  fontSize: 18,
                 ),
                 SizedBox(height: 25),
                 Row(

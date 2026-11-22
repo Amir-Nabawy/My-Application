@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/custom_widgets.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -30,7 +31,7 @@ class SignUpScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 16, color: Color(0xff7C7C7C)),
                 ),
                 SizedBox(height: 40),
-            
+
                 TextFormField(
                   cursorColor: Color.fromARGB(255, 241, 202, 202),
                   decoration: InputDecoration(
@@ -136,23 +137,12 @@ class SignUpScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 30),
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 24.5),
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Color(0xff53B175),
-                    borderRadius: BorderRadius.circular(19),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Sing Up",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight(600),
-                        color: Color(0xffFFF9FF),
-                      ),
-                    ),
-                  ),
+                AppBotton(
+                  text: "Sing Up",
+                  color: Color(0xff53B175),
+                  textcollor: Color(0xffFFF9FF),
+                  fontSize: 18,
+                  fontWeight: FontWeight(600),
                 ),
                 SizedBox(height: 30),
                 Row(
