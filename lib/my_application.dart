@@ -1,9 +1,7 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/home_Screen.dart';
 // ignore: unused_import
-import 'package:flutter_application_3/loginscreen.dart';
-import 'package:flutter_application_3/sign_up_screen.dart';
+import 'package:flutter_application_3/login_screen.dart';
 
 class MyApplication extends StatelessWidget {
   const MyApplication({super.key});
@@ -12,8 +10,9 @@ class MyApplication extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignUpScreen(),
-            // Loginscreen(),
+      home: HomeScreen(),
+      //SignUpScreen(),
+      // Loginscreen(),
     );
   }
 }
