@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_application_3/custom_widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -89,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                     itemCount: 3,
                     itemBuilder: ((context, index) => ProductCard(
                       image: index == 0
-                          ? "assets/pngfuel.png"
+                          ? "assets/92f1ea7dcce3b5d06cd1b1418f9b9413 3.png"
                           : "assets/pngfuel_1.png",
                       nameText: index == 0 ? "Organic Bananas " : "Red Apple",
                       text: index == 0 ? "7pcs, Priceg" : "1kg, Priceg",
@@ -132,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                           ? "assets/Bell.png"
                           : "assets/pngfuel_3.png",
                       nameText: index == 0 ? "Bell Pepper Red" : "Ginger",
-                      text: "\$4.99",
+                      text: index == 0 ? "1kg, Priceg" : "250gm, Priceg",
                     ),
                   ),
                 ),
@@ -179,11 +180,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 SizedBox(
-                  height: 220,
+                  height: 280,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     separatorBuilder: (context, index) => SizedBox(width: 15),
-                    itemCount: 2,
+                    itemCount: 3,
                     itemBuilder: (context, index) => ProductCard(
                       image: index == 0
                           ? "assets/pngfuel_4.png"
@@ -193,6 +194,20 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 20),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: Icon(Icons.arrow_back, size: 30),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 100),
               ],
             ),
           ),
